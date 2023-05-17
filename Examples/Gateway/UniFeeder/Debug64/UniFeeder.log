@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigFeeder.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Logger.cpp
+  DataSource.cpp
+  MTDatafeedApp.cpp
+  UniFeederSocket.cpp
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder\Network\UniFeederSocket.cpp(137,13): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder\Network\UniFeederSocket.cpp(139,14): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  UniFeeder.cpp
+  正在生成代码...
+  UniFeeder.vcxproj -> F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder\Debug64\UniFeeder64.exe

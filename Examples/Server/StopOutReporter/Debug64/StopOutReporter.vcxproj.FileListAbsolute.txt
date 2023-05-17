@@ -1,0 +1,1 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\StopOutReporter\Debug64\StopOutReporter64.dll

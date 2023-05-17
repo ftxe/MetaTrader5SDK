@@ -1,0 +1,12 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.csproj.AssemblyReference.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.CBalanceExampleDlg.resources
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.csproj.GenerateResource.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.csproj.CoreCompileInputs.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.csproj.CopyComplete
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\BalanceExample.NET.exe.config
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\x64\Debug\BalanceExample.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\BalanceExample.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\BalanceExample.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\MetaQuotes.MT5CommonAPI64.dll
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\BalanceExample.NET\Debug64\MetaQuotes.MT5ManagerAPI64.dll

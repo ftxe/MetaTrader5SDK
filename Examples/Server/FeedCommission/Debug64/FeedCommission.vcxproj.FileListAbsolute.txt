@@ -1,0 +1,1 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\FeedCommission\Debug64\FeedCommission64.dll

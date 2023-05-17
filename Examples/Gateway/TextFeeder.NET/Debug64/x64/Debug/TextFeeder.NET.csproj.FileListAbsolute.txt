@@ -1,0 +1,13 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\x64\Debug\TextFeeder.NET.csproj.AssemblyReference.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\x64\Debug\TextFeeder.NET.csproj.CoreCompileInputs.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\x64\Debug\TextFeeder.NET.csproj.CopyComplete
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\_books.txt
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\_news.txt
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\_ticks.txt
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\TextFeeder.NET.exe.config
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\x64\Debug\TextFeeder.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\x64\Debug\TextFeeder.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\TextFeeder.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\TextFeeder.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\MetaQuotes.MT5CommonAPI64.dll
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\TextFeeder.NET\Debug64\MetaQuotes.MT5GatewayAPI64.dll

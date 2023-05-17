@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigFeeder.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigRoute.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigMessenger.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Bases\MT5APIClient.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  StopOutReporter.cpp
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\StopOutReporter\StopOutReporter.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\StopOutReporter\PluginInstance.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  PluginInstance.cpp
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\StopOutReporter\PluginInstance.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\StopOutReporter\PluginInstance.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+    正在创建库 Debug64\StopOutReporter64.lib 和对象 Debug64\StopOutReporter64.exp
+  StopOutReporter.vcxproj -> F:\work\download\mt5\MetaTrader5SDK\Examples\Server\StopOutReporter\Debug64\StopOutReporter64.dll

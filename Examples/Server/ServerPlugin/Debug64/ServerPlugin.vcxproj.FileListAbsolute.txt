@@ -1,0 +1,1 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Server\ServerPlugin\Debug64\ServerPlugin64.dll

@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigFeeder.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigRoute.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigMessenger.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Bases\MT5APIClient.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  SimpleManager.cpp
+  SimpleManager.vcxproj -> F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\SimpleManager\Debug64\SimpleManager64.exe

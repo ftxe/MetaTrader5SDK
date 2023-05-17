@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigFeeder.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Include\Bases\MT5APIClient.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\work\download\mt5\MetaTrader5SDK\Examples\Report\Gateways.Standard.Reports\Tools\GatewayUtils.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Gateways.Standard.Reports.cpp
+  Profit.cpp
+  Turnover.cpp
+  WhiteLabel.cpp
+Gateways.Standard.Reports.rc(10): fatal error RC1015: cannot open include file 'afxres.h'.
+  

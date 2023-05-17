@@ -1,0 +1,12 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.csproj.AssemblyReference.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.CDealerExampleDlg.resources
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.csproj.GenerateResource.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.csproj.CoreCompileInputs.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.csproj.CopyComplete
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\DealerExample.NET.exe.config
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\x64\Debug\DealerExample.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\DealerExample.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\DealerExample.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\MetaQuotes.MT5CommonAPI64.dll
+F:\work\download\mt5\MetaTrader5SDK\Examples\Manager\DealerExample.NET\Debug64\MetaQuotes.MT5ManagerAPI64.dll

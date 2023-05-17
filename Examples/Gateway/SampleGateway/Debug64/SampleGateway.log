@@ -1,0 +1,18 @@
+﻿  stdafx.cpp
+F:\work\download\mt5\MetaTrader5SDK\Include\Config\MT5APIConfigFeeder.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Gateway.cpp
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\SampleGateway\Bases\Gateway.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  TradeDispatcher.cpp
+  Logger.cpp
+  ExchangeSymbols.cpp
+  ExchangeMsg.cpp
+  ExchangeProtocol.cpp
+  ExchangeContext.cpp
+  ExchangeSocket.cpp
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\SampleGateway\ExchangeAPI\Contexts\ExchangeSocket.cpp(49,13): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\SampleGateway\ExchangeAPI\Contexts\ExchangeSocket.cpp(52,14): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  ExchangeAPI.cpp
+  MTGatewayApp.cpp
+  SampleGateway.cpp
+  正在生成代码...
+  SampleGateway.vcxproj -> F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\SampleGateway\Debug64\SampleGateway64.exe

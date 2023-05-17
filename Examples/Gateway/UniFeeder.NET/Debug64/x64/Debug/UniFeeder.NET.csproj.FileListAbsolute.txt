@@ -1,0 +1,10 @@
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\x64\Debug\UniFeeder.NET.csproj.AssemblyReference.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\x64\Debug\UniFeeder.NET.csproj.CoreCompileInputs.cache
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\x64\Debug\UniFeeder.NET.csproj.CopyComplete
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\UniFeeder.NET.exe.config
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\x64\Debug\UniFeeder.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\x64\Debug\UniFeeder.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\UniFeeder.NET.exe
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\UniFeeder.NET.pdb
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\MetaQuotes.MT5CommonAPI64.dll
+F:\work\download\mt5\MetaTrader5SDK\Examples\Gateway\UniFeeder.NET\Debug64\MetaQuotes.MT5GatewayAPI64.dll
