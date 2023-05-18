@@ -5,6 +5,8 @@
 //+------------------------------------------------------------------+
 #include "stdafx.h"
 #include "Dealer.h"
+#include "stringtools.h"
+
 //+------------------------------------------------------------------+
 //| Constructor                                                      |
 //+------------------------------------------------------------------+
@@ -349,6 +351,17 @@ void CDealer::OnOrderAdd(const IMTOrder* order)
     order->Print(str);
     m_manager->LoggerOut(MTLogOK, L"Order: %s has been added", str);
     auto User = order->Login();
+    MTAPIRES res = m_manager->UserRequest(User, m_user);
+    if (res != MT_RET_OK)
+    {
+      m_manager->LoggerOut(MTLogErr, L"UserRequest error (%u)", res);
+    }
+    auto Account = m_user->Account();
+    auto Group = m_user->Group();
+    auto Leverage = m_user->Leverage();
+    auto Name = m_user->Name();
+    auto FirstName = m_user->FirstName();
+    auto LastName = m_user->LastName();
     auto Order = order->Order();
     auto ExternalID = order->ExternalID();
     auto Dealer = order->Dealer();
@@ -386,6 +399,17 @@ void CDealer::OnOrderAdd(const IMTOrder* order)
       TimeSetup, TimeExpiration, Type, TypeFill, TimeDone, priceOrder, priceCurrent,
       volumeInitial, volumeCurrent, PriceTrigger, PriceSL, PriceTP, PositionID, Comment,
       ActivationMode, ActivationTime, ActivationPrice, ActivationFlags);
+    auto syncTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    bool ret_ = m_sql.insert("insert into mt5_order (sync_time, order_id, customer_id, customer_group, symbol_name, "
+      "order_type, order_type_fill, time_expiration, time_setup, time_done, digits, digits_currency, contract_size, "
+      "order_price, trigger_price, current_price, volume, order_stat, error_code, create_by, create_time, remark) "
+      "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);",
+      std::tuple<INT64, UINT64, UINT64, std::string, std::string, 
+      UINT, UINT, INT64, INT64, INT64, UINT, UINT, double,
+      double, double, double, UINT64, UINT, UINT, std::string, INT64, std::string>(
+        syncTime, Order, User, WString2String(Group), WString2String(Symbol),
+        Type, TypeFill, TimeExpiration, TimeSetup, TimeDone, Digits, DigitsCurrency, ContractSize, 
+        priceOrder, PriceTrigger, priceCurrent, volumeCurrent, State, Reason, WString2String(Name), TimeSetup, WString2String(Comment)));
 
   }
 }
@@ -400,6 +424,17 @@ void CDealer::OnOrderUpdate(const IMTOrder* order)
     order->Print(str);
     m_manager->LoggerOut(MTLogOK, L"Order: %s has been updated", str);
     auto User = order->Login();
+    MTAPIRES res = m_manager->UserRequest(User, m_user);
+    if (res != MT_RET_OK)
+    {
+      m_manager->LoggerOut(MTLogErr, L"UserRequest error (%u)", res);
+    }
+    auto Account = m_user->Account();
+    auto Group = m_user->Group();
+    auto Leverage = m_user->Leverage();
+    auto Name = m_user->Name();
+    auto FirstName = m_user->FirstName();
+    auto LastName = m_user->LastName();
     auto Order = order->Order();
     auto ExternalID = order->ExternalID();
     auto Dealer = order->Dealer();
@@ -450,6 +485,17 @@ void CDealer::OnOrderDelete(const IMTOrder* order)
     order->Print(str);
     m_manager->LoggerOut(MTLogOK, L"Order: %s has been deleted", str);
     auto User = order->Login();
+    MTAPIRES res = m_manager->UserRequest(User, m_user);
+    if (res != MT_RET_OK)
+    {
+      m_manager->LoggerOut(MTLogErr, L"UserRequest error (%u)", res);
+    }
+    auto Account = m_user->Account();
+    auto Group = m_user->Group();
+    auto Leverage = m_user->Leverage();
+    auto Name = m_user->Name();
+    auto FirstName = m_user->FirstName();
+    auto LastName = m_user->LastName();
     auto Order = order->Order();
     auto ExternalID = order->ExternalID();
     auto Dealer = order->Dealer();
@@ -538,6 +584,7 @@ void CDealer::OnPositionAdd(const IMTPosition* position)
     auto ActivationTime = position->ActivationTime();
     auto ActivationPrice = position->ActivationPrice();
     auto ActivationFlags = position->ActivationFlags();
+    auto Dealer = position->Dealer();
     m_manager->LoggerOut(MTLogOK, L"OnPositionAdd: Account:%s, Group:%s, Leverage:%d, Name:%s, FirstName:%s, LastName:%s, User:%lld, "
       L"Symbol:%s, Action:%d, Digits:%d, DigitsCurrency:%d, ContractSize:%lf, TimeCreate:%lld, TimeUpdate:%lld "
       L"PriceOpen:%lf, PriceCurrent:%lf, PriceSL:%lf, PriceTP:%lf, Volume:%d, Profit:%lf, Storage:%lf, ObsoleteValue:%lf, "
@@ -548,6 +595,14 @@ void CDealer::OnPositionAdd(const IMTPosition* position)
       PriceOpen, PriceCurrent, PriceSL, PriceTP, Volume, Profit, Storage, ObsoleteValue,
       RateProfit, RateMargin, Comment, Reason, Position,
       ActivationMode, ActivationTime, ActivationPrice, ActivationFlags);
+    auto syncTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    bool ret_ = m_sql.insert("insert into mt5_position (sync_time, position_id, customer_id, customer_group, symbol_name, "
+      "direction, digits, digits_currency, contract_size, open_price, cost_price, volume, deal_id, create_by, create_time) "
+      "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);",
+      std::tuple<INT64, UINT64, UINT64, std::string, std::string,
+      UINT, UINT, UINT, UINT, double, double, UINT64, UINT64, std::string, INT64>(
+        syncTime, Position, User, WString2String(Group), WString2String(Symbol),
+        Action, Digits, DigitsCurrency, ContractSize, PriceOpen, PriceCurrent, Volume, Dealer, WString2String(Name), TimeCreate));
   }
 }
 //+------------------------------------------------------------------+
@@ -738,8 +793,14 @@ void CDealer::OnDealAdd(const IMTDeal* deal)
       Digits, DigitsCurrency, ContractSize, Time, Price, Volume, Profit, Storage, Commission, ObsoleteValue,
       RateProfit, RateMargin, ExpertID, PositionID, Comment, VolumeClosed, TickValue, TickSize,
       TimeMsc, PriceSL, PriceTP, VolumeExt, Fee, Value, MarketBid, MarketAsk, MarketLast);
-    bool ret_ = m_sql.insert("insert into mt5_deal (sync_time, name_, password_) values (?, ?, ?);",
-      std::tuple<double, std::string, std::string>(0.11118, "0.2", "0.2"));
+    auto syncTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    bool ret_ = m_sql.insert("insert into mt5_deal (sync_time, order_id, deal_id, customer_id, customer_group, symbol_name, direction, "
+      "digits, digits_currency, contract_size, execute_price, execute_num, fee, pnl, execute_time, position_id, remark, create_by, create_time) "
+      "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);",
+      std::tuple<INT64, UINT64, UINT64, UINT64, std::string, std::string, UINT, UINT, UINT, double, double, UINT64, 
+      double, double, INT64, UINT64, std::string, std::string, INT64>(
+        syncTime, Order, Deal, User, WString2String(Group), WString2String(Symbol), Action, Digits, DigitsCurrency, ContractSize, Price, Volume,
+        Fee, Profit, TimeMsc, PositionID, WString2String(Comment), WString2String(Name), Time));
   }
 }
 //+------------------------------------------------------------------+

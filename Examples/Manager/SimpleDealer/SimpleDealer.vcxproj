@@ -126,6 +126,7 @@
     <ClInclude Include="sql_operate_ipml.h" />
     <ClInclude Include="sql_warpper.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stringtools.h" />
     <ClInclude Include="wstddef.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

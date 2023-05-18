@@ -44,5 +44,8 @@
     <ClInclude Include="wstddef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stringtools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
